@@ -1,0 +1,10 @@
+/*===使用方法举例===*/
+$(document).ready(function(){
+    $(".work .son").on('click' , function(){
+    	var i=$(this).attr('action-id');
+    	var host="http://"+window.location.host;
+    	url=host+"/index.php/Index/getInfo/id/"+i;
+		popWin.showWin("800","600","案例详情",url);
+	});
+});
+</script>
